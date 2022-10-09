@@ -20,8 +20,12 @@ public class HigherLowerGuessingApp {
 
 		while (numberInput != r) {
 			
+			while (numberInput <= 0 || numberInput >= 101) {
+				System.out.println("Your guess is not between 1 and 100, please try again");
+				numberInput = scan.nextInt();
+			} 
 			
-			if (numberInput < r) {
+			 if (numberInput < r) {
 				counter++;
 				System.out.println(" Please pick a higher number " );
 				numberInput = scan.nextInt();  
