@@ -8,7 +8,7 @@ public class HigherLowerGuessingApp {
 	private void getInput() {
 		
 		Random rand = new Random();
-		int r = rand.nextInt(101);
+		int r = rand.nextInt(100);
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println(" Pick a number between 1 and 100");
@@ -38,7 +38,7 @@ public class HigherLowerGuessingApp {
 				break;
 			} 
 			
-			if (counter > 3 ) {
+			if (counter > 4 ) {
 				System.out.println(" YOU LOSE! only get 5 tries .... ");
 				break;
 			}
